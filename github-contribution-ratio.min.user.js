@@ -3,8 +3,8 @@
 // @author            Axetroy
 // @collaborator      Axetroy
 // @description       查看Github项目的贡献比例
-// @version           1.2.2
-// @update            2017-04-06 21:15:43
+// @version           0.1.0
+// @update            2017-04-06 21:19:09
 // @grant             GM_xmlhttpRequest
 // @include           https://github.com*
 // @connect           *
