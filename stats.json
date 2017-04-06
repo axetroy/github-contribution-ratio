@@ -3,7 +3,7 @@
   "warnings": [],
   "version": "2.3.3",
   "hash": "cceface479cbad6e344f",
-  "time": 3102,
+  "time": 2333,
   "publicPath": "",
   "assetsByChunkName": {
     "github-contribution-ratio": "github-contribution-ratio.user.js",
@@ -12,7 +12,7 @@
   "assets": [
     {
       "name": "github-contribution-ratio.user.js",
-      "size": 15780,
+      "size": 15785,
       "chunks": [
         0,
         1
@@ -24,7 +24,7 @@
     },
     {
       "name": "github-contribution-ratio.min.user.js",
-      "size": 6995,
+      "size": 7000,
       "chunks": [
         1,
         0

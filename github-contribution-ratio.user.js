@@ -4,7 +4,7 @@
 // @collaborator      Axetroy
 // @description       查看Github项目的贡献比例
 // @version           0.1.0
-// @update            2017-04-06 21:19:09
+// @update            2017-04-06 21:28:02
 // @grant             GM_xmlhttpRequest
 // @include           https://github.com*
 // @connect           *
@@ -13,7 +13,7 @@
 // @supportURL        http://www.burningall.com
 // @run-at            document-idle
 // @contributionURL   troy450409405@gmail.com|alipay.com
-// @downloadURL       https://github.com/axetroy/github-contribution-ratio/raw/master/dist/anti-redirect.min.user.js
+// @downloadURL       https://github.com/axetroy/github-contribution-ratio/raw/gh-pages/github-contribution-ratio.user.js
 // @namespace         https://greasyfork.org/zh-CN/users/3400-axetroy
 // @license           The MIT License (MIT); http://opensource.org/licenses/MIT
 // ==/UserScript==
