@@ -1,0 +1,220 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "2.3.3",
+  "hash": "cceface479cbad6e344f",
+  "time": 2542,
+  "publicPath": "",
+  "assetsByChunkName": {
+    "github-contribution-ratio": "github-contribution-ratio.user.js",
+    "github-contribution-ratio.min": "github-contribution-ratio.min.user.js"
+  },
+  "assets": [
+    {
+      "name": "github-contribution-ratio.user.js",
+      "size": 15780,
+      "chunks": [
+        0,
+        1
+      ],
+      "chunkNames": [
+        "github-contribution-ratio"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "github-contribution-ratio.min.user.js",
+      "size": 6995,
+      "chunks": [
+        1,
+        0
+      ],
+      "chunkNames": [
+        "github-contribution-ratio.min"
+      ],
+      "emitted": true
+    }
+  ],
+  "entrypoints": {
+    "github-contribution-ratio": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "github-contribution-ratio.user.js"
+      ]
+    },
+    "github-contribution-ratio.min": {
+      "chunks": [
+        1
+      ],
+      "assets": [
+        "github-contribution-ratio.min.user.js"
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 12048,
+      "names": [
+        "github-contribution-ratio"
+      ],
+      "files": [
+        "github-contribution-ratio.user.js"
+      ],
+      "hash": "d361730732a52d0fc752",
+      "parents": [],
+      "origins": [
+        {
+          "moduleId": 2,
+          "module": "C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\node_modules\\ts-loader\\index.js!C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\index.ts",
+          "moduleIdentifier": "C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\node_modules\\ts-loader\\index.js!C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\index.ts",
+          "moduleName": "./index.ts",
+          "loc": "",
+          "name": "github-contribution-ratio",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 12048,
+      "names": [
+        "github-contribution-ratio.min"
+      ],
+      "files": [
+        "github-contribution-ratio.min.user.js"
+      ],
+      "hash": "20f3af18ad111ee237c6",
+      "parents": [],
+      "origins": [
+        {
+          "moduleId": 2,
+          "module": "C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\node_modules\\ts-loader\\index.js!C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\index.ts",
+          "moduleIdentifier": "C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\node_modules\\ts-loader\\index.js!C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\index.ts",
+          "moduleName": "./index.ts",
+          "loc": "",
+          "name": "github-contribution-ratio.min",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\node_modules\\ts-loader\\index.js!C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\lib\\http.ts",
+      "name": "./lib/http.ts",
+      "index": 1,
+      "index2": 1,
+      "size": 2209,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0,
+        1
+      ],
+      "assets": [],
+      "issuer": "C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\node_modules\\ts-loader\\index.js!C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\index.ts",
+      "issuerId": 2,
+      "issuerName": "./index.ts",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\node_modules\\ts-loader\\index.js!C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\index.ts",
+          "module": "./index.ts",
+          "moduleName": "./index.ts",
+          "type": "cjs require",
+          "userRequest": "./lib/http",
+          "loc": "38:13-34"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "depth": 1,
+      "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar extend = require(\"extend\");\r\nvar Http = (function () {\r\n    function Http(options) {\r\n        this.options = options;\r\n    }\r\n    Http.prototype.request = function (method, url, body, headers) {\r\n        if (headers === void 0) { headers = { 'Cookie': document.cookie }; }\r\n        var options = extend({}, this.options, { method: method, url: url, data: body, headers: headers });\r\n        if (options.url.indexOf('http') !== 0) {\r\n            options.url = (options.base || '') + url;\r\n        }\r\n        options.url += '?client_id=b8257841dd7ca5eef2aa&client_secret=4da33dd6fcb0a01d395945ad18613ecf9c12079e';\r\n        return new Promise(function (resolve, reject) {\r\n            options.synchronous = true; // async\r\n            options.onreadystatechange = function (response) {\r\n                if (response.readyState !== 4)\r\n                    return;\r\n                response.status >= 200 && response.status < 400 ? resolve(response) : reject(response);\r\n            };\r\n            options.onerror = function (response) {\r\n                console.error('http error');\r\n                reject(response);\r\n            };\r\n            options.onabort = function (response) {\r\n                console.error('http abort');\r\n                reject(response);\r\n            };\r\n            options.ontimeout = function (response) {\r\n                console.error('http timeout');\r\n                reject(response);\r\n            };\r\n            GM_xmlhttpRequest(extend({}, options));\r\n        });\r\n    };\r\n    Http.prototype.get = function (url, body, headers) {\r\n        if (body === void 0) { body = null; }\r\n        if (headers === void 0) { headers = {}; }\r\n        return this.request('GET', url, body, headers);\r\n    };\r\n    Http.prototype.post = function (url, body, headers) {\r\n        if (body === void 0) { body = null; }\r\n        if (headers === void 0) { headers = {}; }\r\n        return this.request('POST', url, body, headers);\r\n    };\r\n    return Http;\r\n}());\r\nvar timeout = 5000;\r\nexports.timeout = timeout;\r\nvar http = new Http({ timeout: timeout, base: 'https://api.github.com' });\r\nexports.http = http;\r\n"
+    },
+    {
+      "id": 1,
+      "identifier": "C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\node_modules\\extend\\index.js",
+      "name": "./~/extend/index.js",
+      "index": 2,
+      "index2": 0,
+      "size": 2266,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0,
+        1
+      ],
+      "assets": [],
+      "issuer": "C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\node_modules\\ts-loader\\index.js!C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\lib\\http.ts",
+      "issuerId": 0,
+      "issuerName": "./lib/http.ts",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\node_modules\\ts-loader\\index.js!C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\lib\\http.ts",
+          "module": "./lib/http.ts",
+          "moduleName": "./lib/http.ts",
+          "type": "cjs require",
+          "userRequest": "extend",
+          "loc": "3:13-30"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "depth": 2,
+      "source": "'use strict';\n\nvar hasOwn = Object.prototype.hasOwnProperty;\nvar toStr = Object.prototype.toString;\n\nvar isArray = function isArray(arr) {\n\tif (typeof Array.isArray === 'function') {\n\t\treturn Array.isArray(arr);\n\t}\n\n\treturn toStr.call(arr) === '[object Array]';\n};\n\nvar isPlainObject = function isPlainObject(obj) {\n\tif (!obj || toStr.call(obj) !== '[object Object]') {\n\t\treturn false;\n\t}\n\n\tvar hasOwnConstructor = hasOwn.call(obj, 'constructor');\n\tvar hasIsPrototypeOf = obj.constructor && obj.constructor.prototype && hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');\n\t// Not own constructor property must be Object\n\tif (obj.constructor && !hasOwnConstructor && !hasIsPrototypeOf) {\n\t\treturn false;\n\t}\n\n\t// Own properties are enumerated firstly, so to speed up,\n\t// if last one is own, then all properties are own.\n\tvar key;\n\tfor (key in obj) {/**/}\n\n\treturn typeof key === 'undefined' || hasOwn.call(obj, key);\n};\n\nmodule.exports = function extend() {\n\tvar options, name, src, copy, copyIsArray, clone,\n\t\ttarget = arguments[0],\n\t\ti = 1,\n\t\tlength = arguments.length,\n\t\tdeep = false;\n\n\t// Handle a deep copy situation\n\tif (typeof target === 'boolean') {\n\t\tdeep = target;\n\t\ttarget = arguments[1] || {};\n\t\t// skip the boolean and the target\n\t\ti = 2;\n\t} else if ((typeof target !== 'object' && typeof target !== 'function') || target == null) {\n\t\ttarget = {};\n\t}\n\n\tfor (; i < length; ++i) {\n\t\toptions = arguments[i];\n\t\t// Only deal with non-null/undefined values\n\t\tif (options != null) {\n\t\t\t// Extend the base object\n\t\t\tfor (name in options) {\n\t\t\t\tsrc = target[name];\n\t\t\t\tcopy = options[name];\n\n\t\t\t\t// Prevent never-ending loop\n\t\t\t\tif (target !== copy) {\n\t\t\t\t\t// Recurse if we're merging plain objects or arrays\n\t\t\t\t\tif (deep && copy && (isPlainObject(copy) || (copyIsArray = isArray(copy)))) {\n\t\t\t\t\t\tif (copyIsArray) {\n\t\t\t\t\t\t\tcopyIsArray = false;\n\t\t\t\t\t\t\tclone = src && isArray(src) ? src : [];\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tclone = src && isPlainObject(src) ? src : {};\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t// Never move original objects, clone them\n\t\t\t\t\t\ttarget[name] = extend(deep, clone, copy);\n\n\t\t\t\t\t// Don't bring in undefined values\n\t\t\t\t\t} else if (typeof copy !== 'undefined') {\n\t\t\t\t\t\ttarget[name] = copy;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\t// Return the modified object\n\treturn target;\n};\n\n"
+    },
+    {
+      "id": 2,
+      "identifier": "C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\node_modules\\ts-loader\\index.js!C:\\Users\\axetroy\\gpm\\github.com\\axetroy\\github-contribution-ratio\\index.ts",
+      "name": "./index.ts",
+      "index": 0,
+      "index2": 2,
+      "size": 7573,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0,
+        1
+      ],
+      "assets": [],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "usedExports": true,
+      "providedExports": null,
+      "depth": 0,
+      "source": "\"use strict\";\r\nvar __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {\r\n    return new (P || (P = Promise))(function (resolve, reject) {\r\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\r\n        function rejected(value) { try { step(generator[\"throw\"](value)); } catch (e) { reject(e); } }\r\n        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }\r\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\r\n    });\r\n};\r\nvar __generator = (this && this.__generator) || function (thisArg, body) {\r\n    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t;\r\n    return { next: verb(0), \"throw\": verb(1), \"return\": verb(2) };\r\n    function verb(n) { return function (v) { return step([n, v]); }; }\r\n    function step(op) {\r\n        if (f) throw new TypeError(\"Generator is already executing.\");\r\n        while (_) try {\r\n            if (f = 1, y && (t = y[op[0] & 2 ? \"return\" : op[0] ? \"throw\" : \"next\"]) && !(t = t.call(y, op[1])).done) return t;\r\n            if (y = 0, t) op = [0, t.value];\r\n            switch (op[0]) {\r\n                case 0: case 1: t = op; break;\r\n                case 4: _.label++; return { value: op[1], done: false };\r\n                case 5: _.label++; y = op[1]; op = [0]; continue;\r\n                case 7: op = _.ops.pop(); _.trys.pop(); continue;\r\n                default:\r\n                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }\r\n                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }\r\n                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }\r\n                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }\r\n                    if (t[2]) _.ops.pop();\r\n                    _.trys.pop(); continue;\r\n            }\r\n            op = body.call(thisArg, _);\r\n        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }\r\n        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };\r\n    }\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar http_1 = require(\"./lib/http\");\r\nfunction getUserName() {\r\n    var matcher = location.href.match(/https:\\/\\/github\\.com\\/(\\w+)\\??/);\r\n    return matcher[1];\r\n}\r\nfunction shouldRun() {\r\n    return /https:\\/\\/github\\.com\\/\\w+\\?/.test(location.href) && location.search.indexOf('tab=repositories') >= 0;\r\n}\r\nfunction getRepositories() {\r\n    return [].slice.call(document.querySelectorAll('.js-repo-list>li'))\r\n        .filter(function (li) { return !li.getAttribute('contribute-ratio'); })\r\n        .map(function (li) {\r\n        var a = li.querySelector('h3>a');\r\n        var match = a.pathname.match(/([^\\/]+)\\/([^\\/]+)/);\r\n        li.setAttribute('repository-owner', match[1]);\r\n        li.setAttribute('repository-name', match[2]);\r\n        return li;\r\n    });\r\n}\r\nfunction main() {\r\n    return __awaiter(this, void 0, void 0, function () {\r\n        var userName, lis;\r\n        return __generator(this, function (_a) {\r\n            if (!shouldRun())\r\n                return [2 /*return*/];\r\n            userName = getUserName();\r\n            console.info(\"Stating \" + userName + \"'s contribution...\");\r\n            lis = getRepositories();\r\n            if (!lis.length)\r\n                return [2 /*return*/];\r\n            clearInterval(timer);\r\n            timer = void 0;\r\n            lis.forEach(function (li) {\r\n                var owner = li.getAttribute('repository-owner');\r\n                var name = li.getAttribute('repository-name');\r\n                http_1.http.get(\"/repos/\" + owner + \"/\" + name + \"/stats/contributors\")\r\n                    .then(function (res) {\r\n                    var raw = res.response;\r\n                    if (!raw)\r\n                        return;\r\n                    var response = JSON.parse(raw);\r\n                    response = Object.keys(response).length === 0 ? [] : response;\r\n                    var contributes = response.filter(function (v) { return v[\"author\"][\"login\"] === userName; }).map(function (v) { return v; });\r\n                    var totalAdditions = 0;\r\n                    var totalDeletions = 0;\r\n                    var additions = 0;\r\n                    var deletions = 0;\r\n                    contributes.forEach(function (contribute) {\r\n                        contribute.weeks.forEach(function (week) { return (additions += week.a) && (deletions += week.d); });\r\n                    });\r\n                    response.forEach(function (contribute) {\r\n                        contribute.weeks.forEach(function (week) { return (totalAdditions += week.a) && (totalDeletions += week.d); });\r\n                    });\r\n                    var contributeRatio = (((additions + deletions) / (totalAdditions + totalDeletions)) * 100) + '';\r\n                    li.setAttribute('total-additions', totalAdditions);\r\n                    li.setAttribute('total-deletions', totalDeletions);\r\n                    li.setAttribute('additions', additions);\r\n                    li.setAttribute('deletions', deletions);\r\n                    li.setAttribute('contribute-ratio', parseInt(contributeRatio));\r\n                    var percent = parseInt(contributeRatio) > 0 ? parseInt(contributeRatio) : 1;\r\n                    var uncontribution = document.createElement('span');\r\n                    var contribution = document.createElement('span');\r\n                    var container = document.createElement('span');\r\n                    container.setAttribute('aria-label', \"Contribution \" + percent + \"%\");\r\n                    var width = 155;\r\n                    container.classList.add('d-inline-block');\r\n                    container.classList.add('tooltipped');\r\n                    container.classList.add('tooltipped-s');\r\n                    container.style.width = '155px';\r\n                    var contributionWidth = width * percent / 100;\r\n                    contribution.style.width = contributionWidth + 'px';\r\n                    contribution.style.borderBottom = '2px solid #009688';\r\n                    contribution.style.display = 'inline-block';\r\n                    uncontribution.style.width = width - contributionWidth + 'px';\r\n                    uncontribution.style.borderBottom = '2px solid #9E9E9E';\r\n                    uncontribution.style.display = 'inline-block';\r\n                    container.appendChild(contribution);\r\n                    container.appendChild(uncontribution);\r\n                    li.querySelector('.col-3.float-right.text-right').appendChild(container);\r\n                })\r\n                    .catch(function (err) {\r\n                    console.error(err);\r\n                });\r\n            });\r\n            return [2 /*return*/];\r\n        });\r\n    });\r\n}\r\n(function (history) {\r\n    var pushState = history.pushState;\r\n    history.pushState = function (state) {\r\n        if (typeof history[\"onpushstate\"] == \"function\") {\r\n            history[\"onpushstate\"]({ state: state });\r\n        }\r\n        setTimeout(function () {\r\n            run();\r\n        });\r\n        return pushState.apply(history, arguments);\r\n    };\r\n})(window.history);\r\nvar timer;\r\nfunction run() {\r\n    if (!shouldRun())\r\n        return;\r\n    timer = setInterval(function () {\r\n        main();\r\n    }, 1500);\r\n}\r\nrun();\r\n"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}
