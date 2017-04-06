@@ -17,9 +17,9 @@
 
 ### 如果这能够帮助到你, 不妨点个start, 你的支持就是我更新的动力
 
-[点击从Github安装](https://github.com/axetroy/github-contribution-ratio/raw/gh-pages/github-contribution-ratio.min.user.js)
+[点击从Github安装](https://github.com/axetroy/github-contribution-ratio/raw/gh-pages/github-contribution-ratio.user.min.js)
 
-[点击从GreasyFork安装](https://greasyfork.org/scripts/11915-github-contribution-ratio-typescript/code/github-contribution-ratio%20(typescript).user.js)
+[点击从GreasyFork安装](https://greasyfork.org/scripts/28741-github-contribution-ratio-typescript/code/github-contribution-ratio%20(typescript).user.js)
 
 ### 支持的站点
 

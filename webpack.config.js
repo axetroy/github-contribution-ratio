@@ -53,7 +53,7 @@ module.exports = {
 // @supportURL        http://www.burningall.com
 // @run-at            document-idle
 // @contributionURL   troy450409405@gmail.com|alipay.com
-// @downloadURL       https://github.com/axetroy/github-contribution-ratio/raw/master/dist/anti-redirect.min.user.js
+// @downloadURL       https://github.com/axetroy/github-contribution-ratio/raw/gh-pages/github-contribution-ratio.user.js
 // @namespace         https://greasyfork.org/zh-CN/users/3400-axetroy
 // @license           The MIT License (MIT); http://opensource.org/licenses/MIT
 // ==/UserScript==
