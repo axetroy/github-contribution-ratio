@@ -1,0 +1,36 @@
+{
+  "name": "github-contribution-ratio",
+  "version": "1.2.2",
+  "description": "查看Github项目的贡献比例",
+  "scripts": {
+    "test": "echo 'Test success!'",
+    "build": "webpack --display-error-details --progress --colors",
+    "watch": "webpack --display-error-details --progress --colors --watch",
+    "coverage": "istanbul cover ./**/*.js",
+    "contributor": "./node_modules/.bin/contributors-stat",
+    "generate": "all-contributors generate",
+    "deploy": "gh-pages -d ./dist"
+  },
+  "author": "Axetroy",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/node": "^7.0.8",
+    "@types/rx": "^4.1.1",
+    "@types/underscore": "^1.7.33",
+    "all-contributors-cli": "^4.0.1",
+    "contributors-stat": "^1.1.1",
+    "coveralls": "^2.11.14",
+    "gh-pages": "^0.12.0",
+    "istanbul": "^0.4.5",
+    "moment": "^2.16.0",
+    "ts-loader": "^2.0.1",
+    "ts-node": "^3.0.1",
+    "typescript": "^2.0.6",
+    "webpack": "2.3.3",
+    "webpack-bundle-analyzer": "^2.3.1"
+  },
+  "dependencies": {
+    "extend": "^3.0.0"
+  }
+}
