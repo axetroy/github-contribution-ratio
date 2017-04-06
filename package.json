@@ -1,6 +1,6 @@
 {
   "name": "github-contribution-ratio",
-  "version": "1.2.2",
+  "version": "0.1.0",
   "description": "查看Github项目的贡献比例",
   "scripts": {
     "test": "echo 'Test success!'",
