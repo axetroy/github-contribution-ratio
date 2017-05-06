@@ -11,9 +11,9 @@
     "generate": "all-contributors generate",
     "deploy": "gh-pages -d ./dist"
   },
-  "keywords":[
+  "keywords": [
     "greasy",
-    "script"
+    "script",
     "javascript"
   ],
   "author": "Axetroy",
