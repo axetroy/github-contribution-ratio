@@ -11,6 +11,11 @@
     "generate": "all-contributors generate",
     "deploy": "gh-pages -d ./dist"
   },
+  "keywords":[
+    "greasy",
+    "script"
+    "javascript"
+  ],
   "author": "Axetroy",
   "license": "ISC",
   "devDependencies": {
