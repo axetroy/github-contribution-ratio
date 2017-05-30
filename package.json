@@ -33,7 +33,7 @@
     "moment": "^2.16.0",
     "ts-loader": "^2.0.1",
     "ts-node": "^3.0.1",
-    "typescript": "^2.0.6",
+    "typescript": "^2.3.4",
     "webpack": "2.6.1",
     "webpack-bundle-analyzer": "^2.3.1"
   },
